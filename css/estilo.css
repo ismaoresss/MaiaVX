@@ -1,0 +1,1005 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300;400;500;600&display=swap');
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Montserrat';
+        }
+        
+        html,body {
+            scroll-behavior: smooth;
+            overflow-x: hidden; /* Desactiva el scroll horizontal */
+            width: 100%;
+        }
+        body{
+            touch-action: pan-y;
+        }
+
+
+        /* *********************/
+        /* seccion inicio */
+        /* *********************/
+        
+        #inicio {
+            background: linear-gradient( rgba(0, 0, 0, .7), rgba(0, 0, 0, .7)), url("../img/fondo2.jpg");
+            background-size: cover;
+            background-position: center center;
+            height: 140vh;
+            justify-content: center;
+            align-items: center;
+        }
+
+        
+
+        #inicio .contenido header {
+            background-color: #82A46B;
+            position: fixed;
+            width: 100%;
+            z-index: 100;
+            top: 0;
+        }
+        
+        #inicio .contenido header .contenido-header {
+            max-width: 1100px;
+            margin: auto;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 10px 20px;
+            background-color: #82A46B ;
+        }
+        
+        #inicio .contenido header .contenido-header h1 {
+            text-align: center;
+            color: #f3f3f3;
+           
+        }
+        
+        #inicio .contenido header .contenido-header nav ul {
+            list-style: none;
+            display: flex;
+            align-items: center;
+        }
+        
+        #inicio .contenido header .contenido-header nav ul li a {
+            text-decoration: none;
+            font-family: "Higuen Elegant Serif";
+            color: #f3f3f3;
+            margin: 0 12px;
+            font-weight: 400;
+            transition: .5s;
+        }
+        
+        
+          
+          @keyframes sonajero {
+            0%, 100% {
+              transform: rotate(-5deg); /* Comienza y termina en una posición ligeramente inclinada */
+            }
+            50% {
+              transform: rotate(5deg); /* Gira ligeramente en sentido contrario */
+            }
+          }
+
+          @keyframes brillo {
+            0% {
+              text-shadow: 0 0 10px rgba(255, 255, 255, 0.8), 0 0 20px rgba(255, 255, 255, 0.6);
+            }
+            50% {
+              text-shadow: 0 0 20px rgba(255, 255, 255, 1), 0 0 30px rgba(255, 255, 255, 0.8);
+            }
+            100% {
+              text-shadow: 0 0 10px rgba(255, 255, 255, 0.8), 0 0 20px rgba(255, 255, 255, 0.6);
+            }
+          }
+
+        .mis-15 {
+            font-family: 'Dancing Script', cursive;
+            font-size: 100px; /* Tamaño de letra */
+            color: #f3f3f3; /* Un rosa elegante */
+            font-style: italic; /* Asegura que esté en cursiva */
+            text-align: center; /* Centrar el texto */
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3); /* Sombra suave */
+            margin-top: 20px; /* Espaciado superior */
+            animation: movimiento 2s ease-out, sonajero 1s ease-in-out infinite, brillo 1.5s infinite alternate;
+        }
+        
+        #inicio .contenido header .contenido-header nav ul li a:hover {
+            color: #f3f3f3;
+        }
+        
+        #inicio .contenido header .contenido-header .redes a {
+            text-decoration: none;
+            color: #fff;
+            display: inline-block;
+            margin-left: 10px;
+            transition: .5s;
+            
+        }
+        
+        #inicio .contenido header .contenido-header .redes a:hover {
+            color: #f3f3f3;
+        }
+        
+        #inicio .contenido header .contenido-header .seleccionado {
+            color: #f3f3f3;
+        }
+        
+        #inicio .contenido .presentacion {
+            max-width: 1100px;
+            height: 100vh;
+            margin: auto;
+            color: #fff;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+        }
+        
+        #inicio .contenido .presentacion .bienvenida {
+            font-size: 25px; /* Tamaño más destacado */
+            font-family: "Higuen Elegant Serif", serif; /* Fuente elegante */
+            color: #fff; /* Texto blanco para contraste */
+            text-transform: uppercase; /* Mayúsculas para un estilo más formal */
+            letter-spacing: 2px; /* Espaciado entre letras para mejorar legibilidad */
+            text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5); /* Sombra suave para profundidad */
+            text-decoration: underline; /* Subrayado */
+            text-decoration-thickness: 2px; /* Grosor del subrayado */
+            text-decoration-color: #82A46B; /* Color del subrayado a juego con el tema */
+            margin-bottom: 20px; /* Espaciado inferior */
+            margin-top: 280px;
+            position: relative; /* Posición relativa para el seudoelemento */
+            top: 10px; /* Ajusta según necesites */
+        }
+        
+        #inicio .contenido .presentacion h2 {
+            font-size: 55px;
+            font-family: "Higuen Elegant Serif" ;
+            margin-bottom: 25px;
+            text-align: center;
+            font-style: italic;
+        }
+        
+        #inicio .contenido .presentacion h2 span {
+            font-size: 70px;
+            color: #f3f3f3;
+        }
+        
+        #inicio .contenido .presentacion .descripcion {
+            max-width: 700px;
+            margin: 25px auto;
+            font-size: 18px;
+            text-align: center;
+            font-family: "Higuen Elegant Serif";
+            color: #f3f3f3;
+        }
+    
+        #inicio .contenido .presentacion a {
+            text-decoration: none;
+            display: inline-block;
+            margin: 25px;
+            padding: 20px 25px;
+            border: 2px solid #fff;
+            border-radius: 50px;
+            color: #fff;
+            font-weight: bold;
+            text-transform: uppercase;
+            transition: .5s;
+        }
+        
+        
+        #icono-nav {
+            color: #fff;
+            display: none;
+        }
+
+        #inicio .presentacion .contenedor-confirmacion {
+            background-color: rgba(255, 255, 255, 0.3); /* Fondo blanco con transparencia */
+            padding: 5px 10px; /* Espaciado interno */
+            border-radius: 15px; /* Bordes redondeados */
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Sombra suave */
+            max-width: 500px; /* Ancho máximo */
+            margin: 20px auto; /* Centrado y separación */
+            text-align: center; /* Centrado del contenido */
+            animation: fadeIn 0.8s ease-in-out; /* Animación al cargar */
+            margin-top: -10px;
+        }
+        
+        #inicio .presentacion .contenedor-confirmacion h3 {
+            font-family: 'Dancing Script', cursive; /* Fuente elegante */
+            font-size: 24px; /* Tamaño del texto */
+            color: #ffffff; /* Color de texto oscuro */
+            margin-bottom: 15px; /* Separación inferior */
+            text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.1); /* Sombra suave en el texto */
+        }
+        
+        #inicio .presentacion .contenedor-confirmacion a {
+            display: inline-block;
+            text-decoration: none; /* Sin subrayado */
+            background: #82A46B; /* Color del botón */
+            color: #ffffffb6; /* Texto blanco */
+            padding: 10px 20px; /* Espaciado interno */
+            border-radius: 15px; /* Bordes redondeados */
+            font-family: 'Arial', sans-serif; /* Fuente sencilla */
+            font-size: 16px; /* Tamaño del texto */
+            font-weight: bold; /* Negrita */
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2); /* Sombra suave */
+            transition: background-color 0.3s ease, transform 0.2s ease; /* Transiciones suaves */
+        }
+        
+        #inicio .presentacion .contenedor-confirmacion a:hover {
+            background: #6e8e57; /* Cambio de color al pasar el mouse */
+            transform: translateY(-3px); /* Efecto de elevación */
+        }
+        
+        /* Animación de aparición */
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+                transform: translateY(10px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        /* *********************/
+        /* CUENTA REGRESIVA */
+        /* *********************/
+        #cuenta {
+            display: flex;
+            justify-content: center;
+            margin-bottom: 100px;
+            height: 90vh;
+        }
+        
+        .simply-section {
+            background: #82A46B;
+            width: 180px;
+            height: 180px;
+            margin: 0 20px;
+            border-radius: 5px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            
+        }
+        
+        .simply-amount {
+            display: block;
+            font-size: 50px;
+            font-weight: 700;
+        }
+        
+        .simply-word {
+            font-family: "Higuen Elegant Serif"; /* Cambiar por la fuente que prefieras */
+            font-weight: 300;
+            font-size: 30px;
+            font-weight: bold; /* Negrita opcional */
+            font-style:italic;
+        }
+
+        .mensaje-final {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            background: #4C7031; /* Verde más oscuro para diferenciar */
+            color: white;
+            font-size: 30px;
+            font-weight: bold;
+            font-family: "Higuen Elegant Serif"; /* Misma fuente */
+            width: 300px;
+            height: 200px;
+            margin: 20px auto;
+            border-radius: 10px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+            transform: scale(0);
+            opacity: 0;
+            transition: all 0.5s ease-in-out;
+        }
+        
+        /* Clase para mostrar el mensaje con animación */
+        .mostrar {
+            transform: scale(1);
+            opacity: 1;
+            display: block !important;
+        }
+        
+        /* Ocultar por defecto */
+        .oculto {
+            display: none;
+        }
+        
+
+        /* *********************/
+        /* seccion invitacion */
+        /* *********************/
+
+        #sobremi {
+            position: relative;
+            width: 100%;
+            height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url("../img/fondo4.jpg");
+            background-size: cover;
+            background-position: center;
+            flex-direction: column;
+            padding: 20px;
+            box-sizing: border-box;
+        }
+
+        #sobremi .contenido {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+        }
+
+       
+
+        #sobremi .Tittulo-seccion {
+            font-size: 23px; /* Tamaño más destacado */
+            font-family: "Higuen Elegant Serif", serif; /* Fuente elegante */
+            color: #fff; /* Texto blanco para contraste */
+            text-transform: uppercase; /* Mayúsculas para un estilo más formal */
+            letter-spacing: 2px; /* Espaciado entre letras para mejorar legibilidad */
+            text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5); /* Sombra suave para profundidad */
+            text-decoration: underline; /* Subrayado */
+            text-decoration-thickness: 2px; /* Grosor del subrayado */
+            text-decoration-color: #82A46B; /* Color del subrayado a juego con el tema */
+            margin-bottom: 15px; /* Espaciado inferior */
+        }
+
+        #sobremi .sub-titulo {
+            font-size: 20px; 
+            color: #fff;
+            font-family: "Higuen Elegant Serif", serif; /* Fuente elegante */
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+            margin-bottom: 15px; /* Espacio debajo del título */
+            margin-top: 10px;
+            text-decoration: underline; /* Subrayado */
+            letter-spacing: 2px; /* Espaciado entre letras para mejorar legibilidad */
+            text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5); /* Sombra suave para profundidad */
+            text-decoration-thickness: 2px; /* Grosor del subrayado */
+            text-decoration-color: #82A46B; /* Color del subrayado a juego con el tema */
+        }
+
+        .contenido-ubicacion{
+            opacity: 0;
+            transition: opacity 2s ease-out, transform 2s ease-out;
+        }
+
+        .contenido-ubicacion.mostrar{
+            opacity: 1;
+        }
+
+        
+        .contenido-ubicacion .col img {
+            border-radius: 12%; /* Redondea completamente la imagen */
+            width: 300px; /* Ajusta el tamaño si es necesario */
+            height: 300px; /* Asegúrate de que tenga forma circular */
+            object-fit: cover; /* Asegura que el contenido se recorte correctamente */
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Agrega sombra para estilo */
+            margin-bottom: 20px;
+
+        }
+
+        .contenido-ubicacion .col img:hover {
+            transform: scale(1.1); /* Aumenta ligeramente el tamaño */
+            box-shadow: 0 6px 12px rgba(0, 0, 0, 0.4); /* Sombra más intensa */
+            
+        }
+
+        /* Flex container para centrar ambas secciones horizontalmente */
+        .contenedor-central {
+            display: flex;
+            align-items: center; /* Centrar verticalmente */
+            justify-content: center; /* Centrar horizontalmente */
+            gap: 30px; /* Espaciado entre el video y el mapa */
+            margin-top: 20px; /* Ajusta si es necesario */
+            
+        }
+
+        .info-container {
+            background-color: #82A46B;
+            padding: 8px;
+            border-radius: 10px;
+            color: white;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+            text-align: left;
+            gap: 40px;
+        }
+        
+        .info-item {
+            margin: 10px 0;
+            display: flex;
+            align-items: center;
+            font-size: 16px;
+        }
+        
+        .info-item .icon {
+            font-size: 18px;
+            margin-right: 10px;
+            color: #ffffff;
+        }
+
+        /* CARRUSEL */
+
+
+        .contenedor-carrusel {
+            width: 100%; /* O un tamaño específico */
+            max-width: 600px; /* Evita que el carrusel sea más grande de lo necesario */
+            overflow: hidden; /* Evita que se vean elementos fuera del carrusel */
+            position: relative;
+            opacity: 0;
+            transition: opacity 2s ease-out, transform 2s ease-out;
+        }
+
+        .contenedor-carrusel.mostrar {
+            opacity: 1;
+            transform: translateX(0);
+        }
+
+        .carrusel {
+            display: flex;
+            transition: transform 0.5s ease-in-out;
+            width: 100%;
+        }
+
+        .marco-invitacion {
+            min-width: 1px; /* Ancho del carrusel */
+            flex: 0 0 100%; /* Ancho del carrusel */
+            padding: 20px; /* Espaciado interno */
+            text-align: center; /* Centrado del contenido */
+            background: #eef1e8; /* Fondo blanco */
+            border-radius: 20px; /* Bordes redondeados */
+            border: 4px solid #a4b494; /* Borde verde */
+            box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1); /* Sombra suave */
+            font-family: 'Playfair Display', serif; /* Fuente elegante */
+            position: relative; /* Posición relativa para los seudoelementos */
+        }   
+
+        .marco-invitacion::before,
+        .marco-invitacion::after {
+            content: "";
+            position: absolute;
+            width: 50px;
+            height: 40px;
+            background: transparent;
+            border: 4px solid #a4b494;
+            border-radius: 50%;
+        }
+
+        .marco-invitacion::before {
+            top: -20px; 
+            left: -20px;
+        }
+
+        .marco-invitacion::after {
+            bottom: -20px;
+            right: -20px;
+        }
+
+        h2 {
+            font-family: 'Playfair Display', serif;
+            font-size: 28px;
+            color: #000;
+            margin-bottom: 10px;
+        }
+
+        h3 {
+            font-family: 'Playfair Display', serif;
+            font-size: 24px;
+            color:#6b705c;
+            margin-bottom: 10px;
+        }
+
+        .fecha, .hora {
+            font-size: 26px;
+            font-weight: bold;
+            color: #000 !important;
+            font-family: 'Playfair Display', serif;
+        }
+
+        p {
+            font-size: 18px; /* Ajusta el tamaño de la fuente */
+            color: #333; /* Color del texto */
+            font-family: 'Playfair Display', serif; /* Fuente */
+            text-align: center; /* Centra el texto */
+            font-weight: bold;
+        }
+
+        /* Botones */
+        .botones {
+            display: flex;
+            justify-content: center;
+            margin-top: 10px;
+        }
+
+        .boton {
+            background: #5D774E;
+            color: white;
+            border: none;
+            padding: 10px;
+            cursor: pointer;
+            font-size: 18px;
+            margin: 5px;
+        }
+
+        .boton:hover {
+            background: #4a5e3d;
+        }
+
+
+        .fecha{
+            font-weight: bold;
+            font-size: 20px;
+            color: #fff;
+        }
+        .hora{
+            font-weight: bold;
+            font-size: 20px;
+            color: #fff;
+            font-style: italic;
+        }
+
+
+
+
+        /* *********************/
+        /* seccion REGALO */
+        /* *********************/
+
+        #regalo {
+            background: linear-gradient( rgba(0, 0, 0, .7), rgba(0, 0, 0, .7)), url("../img/fondo2.jpg");
+            background-size: cover;
+            background-position: center center;
+            height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center; /* Centra el contenido en el medio de la pantalla */
+        }
+
+        #regalo .sobremi {
+            display: flex;
+            justify-content: center; /* Centra el texto dentro del contenedor */
+            align-items: center; /* Centra el texto verticalmente */
+            text-align: center; /* Centra el texto */
+            color: #fff;
+        }
+
+        .sobremi{
+            opacity: 0;
+            transition: opacity 2s ease-out, transform 2s ease-out;
+        }
+
+        .sobremi.mostrar{
+            opacity: 1;
+        }
+
+
+        .icono-regalo {
+            text-align: center;
+            margin-bottom: 10px; /* Espacio entre el ícono y el marco */
+        }
+        .icono-regalo img {
+            width: 85px;
+            animation: giftBounce 1.5s infinite ease-in-out;
+        }
+        
+        
+        /* Animación para que el ícono haga un pequeño rebote */
+        @keyframes giftBounce {
+            0%, 100% { transform: translateY(0); }
+            50% { transform: translateY(-5px); }
+        }
+
+        #regalo .sobremi h2 {
+            font-size: 35px;
+            font-weight: bold;
+            margin: 0;
+            letter-spacing: 2px;
+            font-family: "Higuen Elegant Serif", serif;
+            text-align: center;
+            background: linear-gradient(150deg, #8a8ad3, #ffffff); 
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            line-height: 1.2;
+        }
+
+        #regalo .sobremi h2 span {
+            font-family: "Higuen Elegant Serif", serif;
+            font-weight: bold;
+            background: linear-gradient(130deg, #82A46B, #ffffff); /* Un degradado más sutil para destacar */
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+
+        /* Marco decorativo */
+        .marco {
+            position: relative;
+            padding: 10px 15px;
+            background: linear-gradient(135deg, rgba(139, 118, 177, 0.8), rgba(130, 164, 107, 0.6)); /* Gradiente suave */
+            border-radius: 20px; /* Bordes suaves */
+            display: inline-block;
+            border: 3px solid transparent;
+            background-clip: padding-box; /* Para evitar que el borde quede sobre el fondo */
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3); /* Sombra difusa */
+            animation: borderAnimation 1.5s ease-in-out infinite; /* Animación de borde */
+            animation: giftBounce 1.5s infinite ease-in-out;
+        }
+        @keyframes borderAnimation {
+            0% {
+                border-color: #546592;
+            }
+            50% {
+                border-color: #fff; /* El borde se hace blanco a la mitad de la animación */
+            }
+            100% {
+                border-color: #82A46B;
+            }
+        }
+
+        /* ALIAS*/
+        .alias-container {
+            margin-top: 10px; /* Espaciado entre logo y alias */
+            padding: 10px 15px;
+            background: #f8f8f8;
+            border-radius: 10px;
+            text-align: center;
+            box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
+            display: flex;
+            flex-direction: column;
+            align-items: center; /* Centra el contenido */
+            width: fit-content;
+            margin-left: auto;
+            margin-right: auto;
+            
+        }
+
+        .alias-container:hover {
+            transform: scale(1.05);
+        }
+
+        /* Estilo del alias */
+        #aliasText {
+            font-size: 18px;
+            font-weight: bold;
+            color: #333;
+            display: block;
+            margin-bottom: 8px;
+            font-family: "Higuen Elegant Serif", serif;
+        }
+
+        /* Botón de copiar */
+        .copy-btn {
+            background: #4d98df;
+            color: white;
+            border: none;
+            padding: 8px 12px;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 14px;
+            display: flex;
+            align-items: center;
+            gap: 5px;
+        }
+
+        .copy-btn i {
+            font-size: 16px;
+        }
+
+        /* Animación cuando se copia */
+        .copy-btn:active {
+            background: #0056b3;
+        }
+        
+        
+        
+        /* *********************/
+        /* seccion contacto */
+        /* *********************/
+        
+        #contacto {
+            background: linear-gradient( rgba(0, 0, 0, .7), rgba(0, 0, 0, .7)), url("../img/fondo4.jpg");
+            background-size: cover;
+            background-position: center center;
+            padding: 100px 15px;
+        }
+        
+        #contacto .titulo-seccion {
+            margin-bottom: 20px;
+            
+        }
+        
+        #contacto .contenedor-form {
+            max-width: 1100px;
+            margin: auto;
+        }
+
+        .contenedor-form{
+            opacity: 0;
+            transition: opacity 2s ease-out, transform 2s ease-out;
+        }
+
+        .contenedor-form.mostrar{
+            opacity: 1;
+        }
+        
+        #contacto .contenedor-form .fila {
+            margin-bottom: 15px;
+            color: #f8f8f8;
+            font-family: "Higuen Elegant Serif", serif;
+        }
+        
+        #contacto .contenedor-form .mitad {
+            display: flex;
+            justify-content: space-between;
+        }
+        
+        #contacto .contenedor-form input,
+        #contacto .contenedor-form textarea {
+            padding: 20px;
+            border-radius: 20px;
+            border: none;
+            border: 1px solid #919191;
+        }
+        
+        #contacto .contenedor-form .mitad input {
+            width: 48%;
+        }
+        
+        #contacto .contenedor-form .input-full {
+            width: 100%;
+        }
+        
+        #contacto .titulo-seccion {
+            text-align: center;
+            font-size: 22px;
+            font-family: "Higuen Elegant Serif", serif;
+            text-transform: uppercase;
+            color: #f8f8f8;
+            text-decoration: underline;
+            text-decoration-color: #82A46B;
+            text-decoration-thickness: 2px;
+        }
+        
+        #contacto .btn-enviar {
+            display: block;
+            margin: auto;
+            cursor: pointer;
+            transition: .5s;
+            padding: 10px 15px !important;
+            font-family: "Higuen Elegant Serif", serif;
+            font-weight: bold;
+        }
+        
+        #contacto .btn-enviar:hover {
+            background-color: #82A46B;
+            color: #fff;
+        }
+
+        /**********************/
+    
+        footer{
+            background-color: #000;
+            color:#f3f3f3;
+            text-align: center;
+            padding: 30px 0;
+        }
+        footer a{
+            text-decoration: none;
+            color: #fff;
+            display: inline-block;
+            margin: 5px;
+            font-size: 26px;
+        }
+        footer p{
+            color: #fff;
+        }
+
+        /* *********************/
+        /* seccion R E S P O N S I V E */
+        /* *********************/
+        
+        @media screen and (max-width: 765px) {
+            .bienvenida {
+                font-size: 30px;
+            }
+        
+            .mis-15 {
+                font-size: 40px;
+            }
+        
+            .descripcion {
+                font-size: 20px;
+            }
+        
+            /* Consolidación del estilo para el contenedor de confirmación */
+            .contenedor-confirmacion {
+                font-size: 8px;          /* Reducir tamaño de fuente */
+                padding: 5px 10px;        /* Reducir padding */
+                margin-top: 10px;         /* Reducir margen superior */
+                max-width: 85%;           /* Limitar el ancho al 85% de la pantalla */
+                text-align: center;
+                background-color: rgba(255, 255, 255, 0.3);
+                border-radius: 10px;
+                box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+            }
+        
+            /* Estilos para los encabezados y enlaces dentro del contenedor de confirmación */
+            .contenedor-confirmacion h3 {
+                font-size: 10px; /* Reducir el tamaño del encabezado */
+                margin-bottom: 10px;
+            }
+        
+            .contenedor-confirmacion a {
+                font-size: 10px; /* Ajustar tamaño del enlace */
+                padding: 8px 12px; /* Aumentar el padding del enlace */
+            }
+        
+            #cuenta {
+                flex-wrap: wrap;
+                gap: 10px;
+                height: auto;
+            }
+        
+            .simply-section {
+                width: 120px;
+                height: 120px;
+                margin: 10px;
+            }
+        
+            .simply-amount {
+                font-size: 30px;
+            }
+        
+            .simply-word {
+                font-size: 20px;
+            }
+
+            .redes {
+                display: none;
+            }
+            nav {
+                display: none;
+            }
+            nav.responsive {
+                display: block;
+                background-color: rgba(0, 0, 0, .8);
+                width: 100%;
+                position: absolute;
+                top: 48px;
+                left: 0;
+                padding: 10px 0;
+            }
+            nav.responsive ul {
+                display: block !important;
+                text-align: center;
+            }
+            nav.responsive ul li {
+                margin: 5px 0;
+            }
+            #icono-nav {
+                display: block;
+            }
+            #inicio .contenido .presentacion h2 {
+                font-size: 40px;
+            }
+            .contenedor-confirmacion{
+                font-size: 15px;
+                width: 90%;
+            }
+
+
+            /* SECCION INVITACION */
+            #sobremi{
+                height: 140vh;
+            }
+            .contenedor-central {
+                flex-direction:column; /* Apilar elementos en columna */
+                align-items: center;
+            }
+            
+            .marco-invitacion {
+                width: 90%; /* Ajustar ancho para pantallas más pequeñas */
+                height: 110%;
+            }
+            .contenido-ubicacion .col img {
+                max-width: 200px; /* Reducir tamaño del mapa */
+                height: 200px;
+            }
+            .info-container {
+                font-size: 14px; /* Reducir texto para móviles */
+            }
+
+            .info-container .info-item {
+                font-size: 12px; /* Reducir tamaño del texto */
+            }
+
+            /* CARRUSEL */
+            .contenedor-carrusel {
+                max-width: 82%; /* Ajustar el ancho del carrusel */
+            }
+            
+
+
+            /* SECCION MIS PRESENTE */
+            #regalo {
+                height:75vh; /* Ajustar altura para pantallas pequeñas */
+            }
+        
+            #regalo .contenedor-foto {
+                max-width: 150px; /* Reducir el tamaño de la imagen */
+                margin-right: 20px;
+                margin-bottom: 20px; /* Espaciado entre los elementos */
+            }
+        
+            #regalo .sobremi h2 {
+                font-size: 23px; /* Reducir tamaño de fuente */
+                padding: auto;
+            }
+            #regalo .sobremi .marco{
+                padding: 10px; /* Ajustar el padding */
+                max-width: 90%; /* Ajustar el ancho */
+            }
+        
+            .alias-container {
+                width: 90%;
+                padding: 8px;
+            }
+            #aliasText {
+                font-size: 14px; /* Reducir tamaño de fuente */
+            }
+            .copy-btn {
+                font-size: 12px; /* Reducir tamaño del texto */
+                padding: 6px 10px;
+            }
+
+            /* seccion CONTACTO */
+            #contacto {
+                padding: 50px 15px;
+            }
+            #contacto .contenedor-form .mitad {
+                margin-bottom: 15px;
+                display: block;
+            }
+            #contacto .contenedor-form .mitad input {
+                width: 100%;
+                margin-bottom: 15px;
+            }
+            /* FOOTER */
+
+            footer {
+                padding: 20px 0; /* Ajusta el padding para pantallas más pequeñas */
+            }
+            footer .redes {
+                display: flex;
+            } 
+            footer a {
+                font-size: 20px; /* Reduce el tamaño de los iconos */
+                margin: 10px;    /* Aumenta el espacio entre los iconos */
+            }
+            footer {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                flex-wrap: wrap; /* Permite que los iconos se ajusten a la línea siguiente si no caben en una sola línea */
+            }
+        
+            footer a {
+                margin: 10px; /* Aumentamos el margen para los iconos */
+            }
+        }
+        
+        
+        
+       
+        

@@ -1,0 +1,104 @@
+        /* *********************/
+        /* seccion Final */
+        /* *********************/
+        @keyframes fondoAnimado {
+            0% { background-color: #82A46B; }
+            50% { background-color: #A3C59A; }
+            100% { background-color: #82A46B; }
+        }
+
+
+
+        #final {
+            background-color: #82A46B;
+            text-align: center;
+            padding: 13px 0;
+            height: 15vh;
+            opacity: 0;
+            transform: translateY(50px);
+            transition: opacity 0.8s ease-out, transform 0.8s ease-out;
+            animation: fondoAnimado 5s infinite alternate; 
+        }
+
+        #final.mostrar {
+            opacity: 1;
+            transform: translateY(0); 
+        }
+
+
+        #final h2 {
+            color: #fff;
+            font-family: "Higuen Elegant Serif", serif; 
+            font-size: 30px;
+            font-weight: bold;
+        }
+        #final p {
+            color: #fff;
+            font-family: "Higuen Elegant Serif", serif;
+            font-size: 20px;
+            font-weight: bold;
+        }
+
+        @keyframes glow {
+            0% { text-shadow: 0 0 5px #fff; }
+            50% { text-shadow: 0 0 15px #fffb96, 0 0 25px #ffe6a7; }
+            100% { text-shadow: 0 0 5px #fff; }
+        }
+
+        #final h2, #final p {
+            animation: glow 2s infinite alternate;
+        }
+
+        .burbujas {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            overflow: hidden;
+            top: 0;
+            left: 0;
+            pointer-events: none; /* Para que no interfieran con la interacción del usuario */
+        }
+        
+        .burbuja {
+            position: absolute;
+            bottom: -10%;
+            width: 15px;
+            height: 15px;
+            background-color: rgba(255, 255, 255, 0.3);
+            border-radius: 50%;
+            opacity: 0.6;
+            animation: flotar 5s infinite ease-in-out;
+        }
+        
+        @keyframes flotar {
+            0% {
+                transform: translateY(0) scale(1);
+                opacity: 0.6;
+            }
+            50% {
+                transform: translateY(-50vh) scale(1.2);
+                opacity: 1;
+            }
+            100% {
+                transform: translateY(-100vh) scale(0.8);
+                opacity: 0;
+            }
+        }
+        
+
+        @keyframes brillo {
+            0% {
+              text-shadow: 0 0 10px rgba(255, 255, 255, 0.8), 0 0 20px rgba(255, 255, 255, 0.6);
+            }
+            50% {
+              text-shadow: 0 0 20px rgba(255, 255, 255, 1), 0 0 30px rgba(255, 255, 255, 0.8);
+            }
+            100% {
+              text-shadow: 0 0 10px rgba(255, 255, 255, 0.8), 0 0 20px rgba(255, 255, 255, 0.6);
+            }
+          }
+          
+          .brillo {
+            color: #fff;
+            animation: brillo 1.5s infinite alternate;
+          }

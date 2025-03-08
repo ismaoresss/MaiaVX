@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/estilo.css"/>
+    <link rel="stylesheet" href="css/estilo2.css"/>
+    <title>MAIA VX</title>
+</head>
+<!-- SECCION INICIO -->
+    <div class="burbujas"> </div>
+    <div class="brillo">
+        <section id="inicio">
+            <div class = "contenido">
+                <header>
+                    <div class="contenido-header">
+                        <h1>|xv|</h1>
+                        <nav id="nav" class="">
+                            <ul id="link">
+                                <li><a href="#inicio" class="seleccionado"onclick="seleccionar(this)">INICIO</a></li>
+                                <li><a href="#sobremi"onclick="seleccionar(this)">INVITACIÓN</a></li>
+                                <li><a href="#regalo"onclick="seleccionar(this)">REGALO</a></li>
+                                <li><a href="#contacto"onclick="seleccionar(this)">INTERACCIÓN</a></li>
+                            </ul>
+                        </nav>
+                        <!-- icono del menu -->
+                        <div id="icono-nav" onclick="responsiveMenu()">
+                            <i class="fa-solid fa-bars"></i>
+                        </div>
+                    <!-- REDES -->
+                        <div class="redes">
+                            <a href=""><i class="fa-brands fa-instagram-square"></i></a>
+                        </div>
+                    </div>
+                </header>
+                <div class="presentacion">
+                    <p class="bienvenida">BIENVENIDOS </p>
+                    <h1 class="mis-15">Mis 15 Maia</h1>
+                    <p class="descripcion"> CUENTA REGRESIVA</p>
+                    <div id="mensajeFinal" class="mensaje-final oculto">
+                        ¡La espera ha terminado! 🎉
+                    </div>
+                    <div id="cuenta"></div>
+                    <div class="contenedor-confirmacion">
+                        <h3>Por favor confirmar asistencia en el siguiente link: </h3>
+                        <a href="https://wa.me/1162200050?text=Mis+XV+Maia%E2%9C%A8%0D%0AViernes+11+de+Abril+2025%21%0D%0A%0D%0AConfirmo+invitacion+SI+o+NO%3A%0D%0ANombre%3A%0D%0AApellido%3A%0D%0A%0D%0ALos+espero%2C+con+cari%C3%B1o%2C+Maia%F0%9F%A4%8D" target="_blank" rel="noopener noreferrer">click aquí</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+        <!-- SECCION INVITACION-->     
+        <section id="sobremi">
+            <div class="contenido">
+                <h2 class="Tittulo-seccion">INVITACIÓN</h2>
+                <div class="contenedor-central">
+                    
+                    <div class="contenedor-carrusel">
+                        <div class="carrusel-container">
+                            <div class="carrusel">
+                                <div class="marco-invitacion">
+                                    <h2>¡Hola! 🎉</h2>
+                                    <p>¡Estás invitado a mis 15 años! </p>
+                                    <p>¡Será una noche inolvidable, y me encantaría compartirla con vos! </p>
+                                    <p>Agenda esta fecha:</p>
+                                    <p class="fecha">📅 Viernes 11 de abril</p>
+                                    <p class="hora">⏰ 21:00 hs a 05:00 hs</p>
+                                </div>
+                                <div class="marco-invitacion">
+                                    <h3>Codigo de vestimenta:</h3>
+                                    <h2>FORMAL</h2>
+                                    <h3>No permitidos:</h3>
+                                    <p>Color Verde y Blanco</p>
+                                </div>
+                                <div class="marco-invitacion">
+                                    <h2>¡Te espero para pasar <br>una noche inolvidable! </h2>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="botones">
+                            <button class="boton boton-anterior">⬅</button>
+                            <button class="boton boton-siguiente">➡</button>
+                        </div>
+                    </div>
+
+                    <div class="contenido-ubicacion">
+                        <h2 class="sub-titulo">TE ESPERO EN:<br> QUINTA LOS DIEZ </h2>      
+                        <div class="col">
+                            <a href="https://maps.app.goo.gl/xGfJ8RqKVAgH7v9i6" target="_blank" rel="noopener noreferrer">
+                                <img src="img/ubi.png" alt="">
+                            </a>
+                            <div class="info-container">
+                                <div class="info-item">
+                                    <span class="icon">📍</span>
+                                    Suiza 1451, B1614 Villa de Mayo, Provincia de Buenos Aires
+                                </div>
+                                <div class="info-item">
+                                    <span class="icon">📞</span>
+                                    Llámanos: +54 11 6220 0050
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <!-- SECCION REGALO-->   
+        <section id="regalo">
+            <div class="sobremi">
+                <div class="icono-regalo">
+                    <img src="img/caja-de-regalo .png" alt="Regalo">
+                </div>
+                <div class="sobremi">
+                        <div class="marco">
+                            <h2><span><br>Nada es mas</span><br>
+                                importante que tu <br>
+                                presencia pero si deseas hacerme<br>
+                                un presente, <br> puedes
+                                hacerlo en la <br>
+                                siguiente cuenta:
+                            </h2>
+                            <div class="alias-container">
+                                <span id="aliasText">maia.ramirez15.mp</span>
+                                <button onclick="copyAlias()" class="copy-btn">
+                                    <i class="fa fa-clipboard"></i> Copiar
+                                </button>
+                            </div>
+                        </div>
+                </div> 
+            </div>
+        </section>
+
+        <!-- SECCTION INTERACCION -->
+        <section id="contacto">
+            <h3 class="titulo-seccion">Interacción</h3>
+            <div class="contenedor-form">
+                <form action="https://formspree.io/f/mzzdvbed" method="POST">
+                    
+                    <!-- Campos de música -->
+                    <div class="fila">
+                        <label>
+                            ¿Qué música te gustaría escuchar?*:
+                            <input type="text" name="musica" placeholder="Ej. Rock, Chamame, Pop, Jazz..." class="input-full"  required>
+                        </label>
+                    </div>
+                    <div class="fila">
+                        <label>
+                            ¿De qué artista te gustaría escuchar?*:
+                            <input type="text" name="artista" placeholder="Ej. The Beatles,El chaqueño Palavecino, Lady Gaga..." class="input-full" required>
+                        </label>
+                    </div>
+
+                    <!-- Botón de envío -->
+                    <button type="submit" class="btn-enviar">Enviar Mensaje</button>
+                </form>
+            </div>
+        </section>
+
+        
+    <section id="final">
+        <div class="contenedor">
+            <h2>Mis XV Maia</h2>
+            <p>¡Te espero!</p>
+            <div class="burbujas"></div>
+        </div>
+        
+    </section>
+
+<!-- SECCTION FOOTER -->
+<footer>
+    <P>Todos los derechos reservados-Ismael oreste</P> 
+    <p>-Redes sociales-</p>
+    <div class="redes">
+        <a href="https://www.instagram.com/isma_ores/?hl=es-la"><i class="fa-brands fa-instagram-square"></i></a>
+        <a href="https://wa.me/541123193052"><i class="fa-brands fa-whatsapp"></i></a>
+    </div>
+</footer>
+<!-- seccion R E S P O N S I V E -->
+<script src="js/script.js"></script>
+<script src="js/simplyCountdown.min.js"></script>
+<script src="js/countdown.js"></script>
+<body>
+</body>
+</html>
+
+
+
